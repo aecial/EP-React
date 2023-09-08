@@ -8,7 +8,7 @@ import PageHeader from "./PageHeader";
 
 const Contact = () => {
   return (
-    <section className="h-[100vh]">
+    <section id="Contact Us" className="h-[100vh]">
       <PageHeader header={"Contact Us"} />
 
       <div className="flex justify-center items-center h-[100%]">

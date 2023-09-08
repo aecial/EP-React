@@ -1,8 +1,12 @@
 import React from "react";
 
-const Navlink = ({ name }) => {
+const Navlink = ({ name, onClick }) => {
   return (
-    <a href="#" className="hover:text-slate-400">
+    <a
+      href={`#${name}`}
+      onClick={onClick}
+      className="nav-link hover:text-slate-400"
+    >
       {name}
     </a>
   );
