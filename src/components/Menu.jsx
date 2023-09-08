@@ -5,7 +5,7 @@ import PageHeader from "./PageHeader";
 
 const Menu = () => {
   return (
-    <section className="h-[100vh] bg-neutral-800 text-white">
+    <section id="Menu" className="h-[100vh] bg-neutral-800 text-white">
       <div className="flex flex-col gap-10 uppercase">
         <PageHeader header={"Menu"} />
         <MenuHeader text="Itik" />
