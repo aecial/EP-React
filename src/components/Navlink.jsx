@@ -5,7 +5,7 @@ const Navlink = ({ name, onClick }) => {
     <a
       href={`#${name}`}
       onClick={onClick}
-      className="nav-link hover:text-slate-400"
+      className="nav-link hover:text-slate-400 text-2xl"
     >
       {name}
     </a>

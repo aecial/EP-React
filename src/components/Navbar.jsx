@@ -29,11 +29,11 @@ const Navbar = () => {
   }
   return (
     <nav className="flex items-center justify-between px-4 py-6 bg-black text-white h-[88px]">
-      <a href="/" className="text-xl md:text-4xl flex items-center">
+      <a href="/" className="text-xl md:text-4xl flex items-center uppercase">
         <img
           src="./src/assets/epLogoClear.png"
           alt="logo"
-          className=" h-20  "
+          className=" h-20   "
         />
         Eatik Point
       </a>
@@ -48,7 +48,7 @@ const Navbar = () => {
       </div>
       <div
         id="mobile-nav"
-        className="bg-black flex flex-col justify-center gap-5 items-center text-2xl h-[30%] w-full absolute left-0 top-20 hidden"
+        className="bg-black flex flex-col justify-center gap-5 items-center text-2xl h-[30%] w-full absolute left-0 top-20 z-0 border-b-2 border-x-2 border-white hidden"
       >
         {links.map((link) => {
           return <Navlink key={link} name={link} onClick={linkClick} />;
