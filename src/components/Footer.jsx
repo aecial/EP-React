@@ -2,8 +2,8 @@ import React from "react";
 import ContactSocials from "./ContactSocials";
 const Footer = () => {
   return (
-    <footer className="h-[15vh] bg-emerald-400 flex justify-center items-center">
-      <div className="bg-teal-200 flex justify-evenly w-[100%]">
+    <footer className="h-[15vh] bg-black text-white flex justify-center items-center">
+      <div className=" flex justify-evenly w-[100%]">
         <a href="#" className="">
           Order Now
         </a>
