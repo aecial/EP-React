@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactSocials = ({ fbLink, igLink, tiktokLink }) => {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col md:flex-row gap-5 md:text-2xl ">
       <a href={fbLink}>
         <i className="fa-brands fa-facebook"></i> Facebook
       </a>

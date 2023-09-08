@@ -12,7 +12,7 @@ const Contact = () => {
       <PageHeader header={"Contact Us"} />
 
       <div className="flex justify-center items-center h-[100%]">
-        <div className="w-[40%] grid grid-cols-3 gap-5 mx-auto">
+        <div className="w-[40%] flex gap-4 flex-wrap md:flex-nowrap text-4xl">
           <ContactEntry title={"Phone Number"} content={"09982409945"} />
           <ContactEntry title={"Location"} content={"Capas, Tarlac"} />
           <ContactEntry

@@ -1,7 +1,7 @@
 import React from "react";
 
 const ContactBody = ({ content }) => {
-  return <div>{content}</div>;
+  return <div className="w-full">{content}</div>;
 };
 
 export default ContactBody;
