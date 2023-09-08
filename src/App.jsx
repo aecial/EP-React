@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero imgSrc={"./src/assets/bird.png"} heroText={"The BEST Fried Itik"} />
       <Menu />
       <Contact />
       <Footer />
