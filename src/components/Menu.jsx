@@ -6,11 +6,11 @@ import PageHeader from "./PageHeader";
 const Menu = () => {
   return (
     <section className="h-[100vh] bg-neutral-800 text-white">
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 uppercase">
         <PageHeader header={"Menu"} />
-        <MenuHeader text="Fried Itik" />
+        <MenuHeader text="Itik" />
         <MenuItems />
-        <MenuHeader text="Crispy Pata" />
+        <MenuHeader text="Pork" />
         <MenuItems />
       </div>
     </section>
