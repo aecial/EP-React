@@ -3,6 +3,10 @@ import MenuBtn from "./components/MenuBtn";
 import MenuItem from "./components/MenuItem";
 
 const Menu = () => {
+  const [list, setList] = useState(0);
+  function handleClick(num) {
+    setList(num);
+  }
   let ITIK = [
     {
       name: "Fried Itik",
@@ -31,20 +35,47 @@ const Menu = () => {
       price: 180,
     },
   ];
+  let SEAFOOD = [
+    {
+      name: "Salmon",
+      price: 285,
+    },
+    {
+      name: "Hipon",
+      price: 180,
+    },
+    {
+      name: "Mixed",
+      price: 180,
+    },
+  ];
   let prac = { name: "ror", price: 20 };
+  const loopItik = ITIK.map((item, index) => {
+    return <MenuItem item={item} key={index} />;
+  });
+  const loopPork = PORK.map((item, index) => {
+    return <MenuItem item={item} key={index} />;
+  });
+  const loopSeafood = SEAFOOD.map((item, index) => {
+    return <MenuItem item={item} key={index} />;
+  });
   let itemNames = ["ITIK", "PORK", "SEAFOOD"];
   return (
     <div className="grid grid-cols-3 h-[100vh]">
       <div className="col  flex flex-col gap-5 justify-center items-center bg-black text-lg md:text-2xl">
         {itemNames.map((item, index) => {
-          return <MenuBtn itemName={item} key={index} />;
+          return (
+            <MenuBtn
+              itemName={item}
+              key={index}
+              onClick={() => handleClick(index)}
+            />
+          );
         })}
       </div>
       <div className="col col-span-2">
         <div className="bg-slate-950 h-full text-white flex items-center justify-center p-5 gap-5">
-          {ITIK.map((item, index) => {
-            return <MenuItem item={item} key={index} />;
-          })}
+          {list == 0 ? loopItik : list == 1 ? loopPork : loopSeafood}
         </div>
       </div>
     </div>
