@@ -1,5 +1,6 @@
 import Menu from "./Menu";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import PageHeader from "./components/PageHeader";
@@ -12,6 +13,7 @@ function App() {
       <Menu />
       <PageHeader header={"Contact Us"} color={"black"} bg={"white"} />
       <Contact />
+      <Footer />
     </>
   );
 }
