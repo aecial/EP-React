@@ -61,8 +61,8 @@ const Menu = () => {
   });
   let itemNames = ["ITIK", "PORK", "SEAFOOD"];
   return (
-    <div className="grid grid-cols-3 h-[100vh]">
-      <div className="col  flex flex-col gap-5 justify-center items-center bg-black text-lg md:text-2xl">
+    <div className="grid grid-flow-dense grid-cols-3 h-[100vh]">
+      <div className="col  flex flex-col gap-5 justify-center items-center bg-black border-r-4 border-white text-lg md:text-2xl">
         {itemNames.map((item, index) => {
           return (
             <MenuBtn
@@ -74,7 +74,7 @@ const Menu = () => {
         })}
       </div>
       <div className="col col-span-2">
-        <div className="bg-slate-950 h-full text-white flex items-center justify-center p-5 gap-5">
+        <div className="bg-black h-full text-white flex flex-col md:flex-row items-center justify-center p-5 gap-5 text-sm md:text-2xl">
           {list == 0 ? loopItik : list == 1 ? loopPork : loopSeafood}
         </div>
       </div>
