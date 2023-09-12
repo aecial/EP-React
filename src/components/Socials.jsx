@@ -10,7 +10,10 @@ const Socials = ({ fbLink, igLink, tkLink }) => {
         <a href={igLink} className=" hover:text-pink-400 ">
           <i class="fa-brands fa-instagram"></i> Instagram
         </a>
-        <a href={tkLink} className=" hover:shadow-md hover:shadow-white ">
+        <a
+          href={tkLink}
+          className=" hover:drop-shadow-[0_3px_2px_rgba(255,0,80,1)] "
+        >
           <i class="fa-brands fa-tiktok"></i> Tiktok
         </a>
       </div>
