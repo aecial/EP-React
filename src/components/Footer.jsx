@@ -7,7 +7,11 @@ const Footer = () => {
     <footer className="h-[42vh] bg-black text-white text-4xl flex flex-col items-center">
       <PageHeader header={"Follow Us"} color={"white"} />
       <div className="h-full flex items-center">
-        <Socials />
+        <Socials
+          fbLink={"https://web.facebook.com/eatikpoint/?_rdc=1&_rdr"}
+          igLink={"https://web.facebook.com/eatikpoint/?_rdc=1&_rdr"}
+          tkLink={"https://www.tiktok.com/@aecial_?lang=en"}
+        />
       </div>
     </footer>
   );

@@ -3,14 +3,14 @@ import React from "react";
 const Socials = ({ fbLink, igLink, tkLink }) => {
   return (
     <>
-      <div className="flex flex-col md:flex-row gap-5 p-4 ">
-        <a href={fbLink}>
+      <div className="flex flex-col md:flex-row gap-5 p-4  ">
+        <a href={fbLink} className="hover:text-blue-700">
           <i class="fa-brands fa-facebook-f"></i> Facebook
         </a>
-        <a href={igLink}>
+        <a href={igLink} className=" hover:text-pink-400 ">
           <i class="fa-brands fa-instagram"></i> Instagram
         </a>
-        <a href={tkLink}>
+        <a href={tkLink} className=" hover:shadow-md hover:shadow-white ">
           <i class="fa-brands fa-tiktok"></i> Tiktok
         </a>
       </div>
